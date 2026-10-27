@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "FlipHTML5 to PDF Downloader",
+  "version": "1.1",
+  "description": "Chrome side panel extension to extract page images from FlipHTML5 books and combine them into a single PDF.",
+  "permissions": [
+    "sidePanel",
+    "activeTab",
+    "tabs",
+    "scripting"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  },
+  "action": {
+    "default_title": "Open FlipHTML5 Downloader Side Panel",
+    "default_icon": "icon128.png"
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
